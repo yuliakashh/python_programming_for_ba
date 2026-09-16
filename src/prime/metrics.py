@@ -8,7 +8,7 @@
 
 def revenue(payments: list[dict]) -> float:
     """Выручка: сумма списаний."""
-    return sum(p["amount"] for p in payments)
+    return round(sum(p["amount"] for p in payments), 2)
 
 def payments_count(payments: list[dict]) -> int:
     """Сколько было списаний."""
